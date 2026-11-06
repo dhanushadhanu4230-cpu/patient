@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Patients</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>🏥 Patient Management System</h1>
+    <p>Patient Records</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="patients.html">List Patients</a>
+    <a href="patient-details.html">Find Patient</a>
+    <a href="add-patients.html">Add Patient</a>
+    <a href="edit-patients.html">Update Patient</a>
+</nav>
+
+<main class="table-container">
+
+    <img
+        class="page-image"
+        src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=800&q=80"
+        alt="Patient records">
+
+    <h2>All Patients</h2>
+
+    <div class="table-scroll">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Gender</th>
+                    <th>Age</th>
+                    <th>Problem</th>
+                </tr>
+            </thead>
+
+            <tbody id="patientsBody">
+                <tr>
+                    <td colspan="7">Loading patients...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <a class="button" href="add-patients.html">Add New Patient</a>
+
+</main>
+
+<footer>Patient Management System</footer>
+
+</body>
+</html>
